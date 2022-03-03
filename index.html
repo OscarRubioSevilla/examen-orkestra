@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Éxamen Orkestra</title>
     <link rel="stylesheet" href="https://uicdn.toast.com/tui.pagination/latest/tui-pagination.css" />
     <link rel="stylesheet" href="/css/plugins/normalize.css">
     <link rel="stylesheet" href="/css/main.css">
@@ -15,13 +15,11 @@
     <main class="container">
         <form id="search_form">
             <div class="search">
-
                 <div class="search-input">
                     <input id="search_text" class="search-input__text" placeholder="Ingresa nombre o celular" type="text">
-                    <button id="search_text_close" type="button" class="search-input__close">x</button>
+                    <button id="search_text_close" type="button" class="search-input__close hide">x</button>
                 </div>
                 <button type="submit" disabled class="search-input__button" id="search_btn">BUSCAR</button>
-
             </div>
         </form>
         <hr class="separador">
@@ -30,10 +28,8 @@
             <div id="pagination1" class="tui-pagination flex justify-content-end"></div>
             <div id="resultados"></div>
             <div id="pagination2" class="tui-pagination flex justify-content-end"></div>
-
         </div>
     </main>
-
     <template id="client_info">
         <section class="card">
             <div class="card__header">
@@ -44,32 +40,38 @@
                 <div class="client-info">
                     <div class="client-info__row">
                         <div class="flex-1 flex justify-content-end">
-                            <p>Celular</p>
-                            <div class="flex align-items-center">
-                                <p class="client-info__cellphone"></p> <img src="" class="cellphone-icon">
+                            <div class="client-info__group text-center">
+                                <p>Celular</p>
+                                <div class="flex align-items-center justify-content-center">
+                                    <p class="client-info__cellphone"></p> <img src="" class="cellphone-icon">
+                                </div>
                             </div>
                         </div>
                         <div class="flex-1 flex">
-                            <p>Ticket más alto</p>
-                            <p class="client-info__ticket"></p>
+                            <div class="client-info__group text-center">
+                                <p>Ticket más alto</p>
+                                <p class="client-info__ticket"></p>
+                            </div>
                         </div>
                     </div>
                     <div class="client-info__row">
                         <div class="flex-1 flex justify-content-end">
-                            <p>Periodo sin compra</p>
-                            <p class="client-info__period"></p>
+                            <div class="client-info__group text-center">
+                                <p>Periodo sin compra</p>
+                                <p class="client-info__period"></p>
+                            </div>
                         </div>
                         <div class="flex-1 flex">
-                            <p>último contacto</p>
-                           <div class="flex align-items-center"> <img src="" class="last-contact-icon"><p class="client-info__last-contact"></p></div>
+                           <div class="client-info__group text-center">
+                            <p>Último contacto</p>
+                            <div class="flex align-items-center justify-content-center"> <img src="" class="last-contact-icon"><p class="client-info__last-contact"></p></div>
+                           </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </template>
-
-    </div>
     <script src="/js/moment.js"></script>
     <script src="https://uicdn.toast.com/tui.pagination/latest/tui-pagination.js"></script>
     <script src="/js/search.js"></script>

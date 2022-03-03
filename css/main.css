@@ -96,6 +96,7 @@ p {
     margin: 0;
     text-decoration: underline;
     color: #5F6D7C;
+    font-weight: 600;
 }
 
 .client-email {
@@ -158,6 +159,14 @@ p {
 
 .hide {
     display: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.client-info__group {
+    width: 10em;
 }
 
 
