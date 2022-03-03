@@ -1,0 +1,189 @@
+:root {
+    --gris: #BCC4CA;
+}
+
+html,
+body {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    margin: .5em;
+}
+
+.container {
+    padding: 1em .5em;
+    background-color: #E7ECF0;
+    min-height: 100vh;
+}
+
+.search {
+    padding: 0 .5em;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.search-input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.search-input__text {
+    padding: .5em;
+    width: 100%;
+    border: 1px solid var(--gris);
+    outline: none;
+}
+
+.search-input__close {
+    position: absolute;
+    right: 0.5em;
+    border: 0;
+    border-radius: 50%;
+    font-weight: 600;
+    color: #FFFFFFFF;
+    cursor: pointer;
+    background-color: #A6AFB9;
+}
+
+.search-input__close:active {
+    background-color: var(--gris);
+}
+
+.search-input__button {
+    background-color: var(--gris);
+    border: 2px;
+    padding: .5em .5em;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.search-input__button.active {
+    background-color: #F49C1E;
+}
+
+.separador {
+    background: #a6afb9;
+    height: 0.05em;
+    border: 0;
+}
+
+.card {
+    margin-bottom: 2em;
+}
+
+.card__header {
+    padding: .5em;
+    background-color: #A6AFB9;
+}
+
+.card__body {
+    padding: 1em;
+    background-color: #FFFFFF;
+}
+
+.client-title {
+    color: var(--gris);
+    font-weight: 500;
+}
+
+.client-name {
+    margin: 0;
+    text-decoration: underline;
+    color: #5F6D7C;
+}
+
+.client-email {
+    margin: 0;
+    color: #5F6D7C;
+    font-size: 12px;
+}
+
+.results-search {}
+
+.results-search__client {}
+
+.client-info__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    gap: 2em;
+}
+
+.cellphone-icon,
+.last-contact-icon {
+    width: 1em;
+    height: 1em;
+    max-width: 100%;
+}
+
+.icon-spinner {
+    width: 3em;
+    height: 3em;
+    max-width: 100%;
+}
+
+
+/*Utils*/
+
+.m0 {
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* Paginate */
+
+.tui-pagination .tui-next+.tui-last,
+.tui-pagination .tui-first {
+    display: none;
+}
+
+.tui-pagination .tui-first+.tui-prev {
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+}
+
+.tui-pagination .tui-next {
+    border-radius: 0 5px 5px 0;
+}
+
+.tui-pagination .tui-page-btn {
+    background-color: #FFF;
+    border-width: 1px;
+}
+
+.tui-pagination .tui-is-selected,
+.tui-pagination strong {
+    background: #337AB7;
+    border-color: #337AB7;
+}
